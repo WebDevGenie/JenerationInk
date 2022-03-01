@@ -1,32 +1,108 @@
-$primary-btn: #ffffff;
+@font-face {
+  font-family: Allura;
+  src: url(/assets/fonts/Allura-Regular/Allura-Regular.ttf);
+}
+
+$primary-color: #203a62;
 
 body {
   margin: auto;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-  display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  box-shadow: 3px 5px rgba($color: #203a62, $alpha: 1);
   width: 100%;
-  nav {
-    margin-right: 10px;
-  }
+  background-color: transparent;
   a {
+    display: inline-block;
+    padding: 10px 10px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    color: rgba($color: $primary-color, $alpha: 1);
+    &:hover {
+      color: inherit;
+    }
   }
   ul {
     list-style-type: none;
-    display: flex;
     align-items: center;
   }
   li {
     display: inline-block;
-    padding-left: 20px;
     max-width: min-content;
     text-align: center;
+    margin-left: 30px;
+    margin: right 20px;
+    &:hover {
+      background-color: rgba($color: $primary-color, $alpha: 1);
+      border-radius: 10px;
+      transition: 0.4s ease;
+      
+    }
+    &:hover a {
+      color: #ffffff;
+    }
   }
+}
+
+.flexbox {
+  display: flex;
+}
+
+.intro-section {
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.title-section {
+  display: block;
+  justify-content: center;
+  color: $primary-color;
+  font-family: Allura;
+  font-size: 2rem;
+  height: 400px;
+
+  background-color: rgba($color: $primary-color, $alpha: 0.25);
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px 60px;
+}
+
+/* CSS */
+.primary-btn {
+  background-color: $primary-color;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+  background-color: rgba($color: $primary-color, $alpha: 0.75);
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 600px) {
+  
 }
