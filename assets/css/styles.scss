@@ -54,18 +54,23 @@ header {
 .intro-section {
   flex-wrap: wrap-reverse;
   justify-content: center;
-  margin-left: 10px;
+  background-color: rgba($color: $primary-color, $alpha: 0.25);
+  p {
+  }
 }
 
 .title-section {
-  display: block;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 40% 40%;
+  width: 400px;
+
   color: $primary-color;
   font-family: Allura;
   font-size: 2rem;
-  height: 400px;
 
-  background-color: rgba($color: $primary-color, $alpha: 0.25);
+  // background-color: rgba($color: $primary-color, $alpha: 0.25);
   padding: 10px;
   text-align: center;
   border-radius: 20px 60px;

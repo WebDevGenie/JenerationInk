@@ -71,19 +71,22 @@ header li:hover a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 10px;
+  background-color: rgba(32, 58, 98, 0.25);
 }
 
 .title-section {
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: 40% 40%;
+      grid-template-rows: 40% 40%;
+  width: 400px;
   color: #203a62;
   font-family: Allura;
   font-size: 2rem;
-  height: 400px;
-  background-color: rgba(32, 58, 98, 0.25);
   padding: 10px;
   text-align: center;
   border-radius: 20px 60px;
