@@ -54,9 +54,8 @@ header {
 .intro-section {
   flex-wrap: wrap-reverse;
   justify-content: center;
-  background-color: rgba($color: $primary-color, $alpha: 0.25);
-  p {
-  }
+  background-color: rgba($color: $primary-color, $alpha: 0.1);
+  padding-bottom: 20px;
 }
 
 .title-section {
@@ -109,5 +108,15 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  
+  .face-img {
+    display: none;
+  }
+  .title-section {
+    font-size: 1.75rem;
+    
+
+    .primary-btn {
+      font-size: 0.75rem;
+    }
+  }
 }

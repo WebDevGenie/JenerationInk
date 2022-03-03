@@ -71,7 +71,8 @@ header li:hover a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(32, 58, 98, 0.25);
+  background-color: rgba(32, 58, 98, 0.1);
+  padding-bottom: 20px;
 }
 
 .title-section {
@@ -130,5 +131,17 @@ header li:hover a {
   background-color: rgba(32, 58, 98, 0.75);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .face-img {
+    display: none;
+  }
+  .title-section {
+    font-size: 1.75rem;
+  }
+  .title-section .primary-btn {
+    font-size: 0.75rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
