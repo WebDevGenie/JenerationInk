@@ -95,14 +95,10 @@ header li:hover a {
 }
 
 .intro-text {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-grid-rows: (25%)[3];
-      grid-template-rows: repeat(3, 25%);
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 400px;
   font-size: 2rem;
   padding: 10px;

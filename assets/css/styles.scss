@@ -86,10 +86,8 @@ header {
 
 // intro-section text
 .intro-text {
-  display: grid;
-  justify-items: center;
-  align-items: flex-start;
-  grid-template-rows: repeat(3, 25%);
+  display: block;
+  justify-content: center;
   width: 400px;
 
   font-size: 2rem;
