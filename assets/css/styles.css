@@ -3,21 +3,33 @@
   src: url(/assets/fonts/Allura-Regular/Allura-Regular.ttf);
 }
 
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html {
+  padding: 0;
+}
+
 .primary-font {
   color: #203a62;
   font-family: Allura;
 }
 
 body {
+  margin: auto;
   margin-left: 25%;
   margin-right: 25%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: absolute;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -33,7 +45,7 @@ header a {
   display: inline-block;
   padding: 10px 10px;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #203a62;
 }
 
@@ -71,31 +83,26 @@ header li:hover a {
   color: #ffffff;
 }
 
-.flexbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .intro-section {
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(32, 58, 98, 0.1);
   padding-bottom: 20px;
+  height: 70vh;
+  padding-top: 180px;
 }
 
-.title-section {
+.intro-text {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-rows: 40% 40%;
-      grid-template-rows: 40% 40%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-grid-rows: (25%)[3];
+      grid-template-rows: repeat(3, 25%);
   width: 400px;
   font-size: 2rem;
   padding: 10px;
@@ -103,7 +110,7 @@ header li:hover a {
   border-radius: 20px 60px;
 }
 
-/* CSS */
+/* CTA button */
 .primary-btn {
   background-color: #203a62;
   border-radius: 8px;
@@ -164,7 +171,7 @@ header li:hover a {
           align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
   body {
     margin: auto;
   }
