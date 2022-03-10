@@ -28,6 +28,7 @@ body {
 }
 
 header {
+  display: flex;
   position: absolute;
   justify-content: space-evenly;
   align-items: center;
@@ -39,7 +40,7 @@ header {
     padding: 10px;
   }
 
-  // navbar links
+  // links
   a {
     display: inline-block;
     padding: 10px 10px;
@@ -52,7 +53,8 @@ header {
       color: inherit;
     }
   }
-  ul {
+  .nav-links {
+    display: flex;
     list-style-type: none;
     align-items: center;
     margin: 0%;
@@ -77,6 +79,7 @@ header {
 
 // Landing page
 .intro-section {
+  display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   padding-bottom: 20px;
@@ -84,7 +87,7 @@ header {
   padding-top: 180px;
 }
 
-// intro-section text
+// Intro-section text
 .intro-text {
   display: block;
   justify-content: center;
@@ -130,7 +133,8 @@ header {
 
 // offers section
 .offer-section {
-  display: flex;
+  display: block;
+  text-align: center;
   justify-content: center;
   .eyebrows {
     display: flex;
@@ -156,9 +160,6 @@ header {
 
 // mobile responsitivity
 @media screen and (max-width: 850px) {
-  body {
-    margin: auto;
-  }
   .face-img {
     display: none;
   }
@@ -173,6 +174,39 @@ header {
   }
   .about-img {
     text-align: center;
+  }
+}
+
+// Hamburger code
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+    justify-content: space-between
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #203a62;
+    margin: 5px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(800px at 90% -10%);
+    transition: all 1s ease-out;
   }
 }
 
