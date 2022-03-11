@@ -185,6 +185,36 @@ header li:hover a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  font-size: 0.75rem;
+}
+
+footer h4 {
+  color: #203a62;
+}
+
+.getinTouch {
+  text-align: left;
+}
+
+.address, .getinTouch {
+  max-width: 30%;
+}
+
+.no-margin {
+  margin: 0;
+}
+
 @media screen and (max-width: 850px) {
   .face-img {
     display: none;
@@ -200,6 +230,14 @@ header li:hover a {
   }
   .about-img {
     text-align: center;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
+  footer .getinTouch, footer .address {
+    text-align: center;
+    margin: 16px;
   }
 }
 

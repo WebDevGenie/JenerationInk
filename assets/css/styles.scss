@@ -158,6 +158,34 @@ header {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+// Footer CSS
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: 0.75rem;
+
+  h4 {
+    color: #203a62;
+  }
+}
+
+.getinTouch {
+  text-align: left;
+}
+
+.address, .getinTouch{
+  max-width: 30%;
+}
+.open-hours {
+}
+
+.no-margin {
+  margin: 0;
+}
+
 // mobile responsitivity
 @media screen and (max-width: 850px) {
   .face-img {
@@ -174,6 +202,15 @@ header {
   }
   .about-img {
     text-align: center;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    .getinTouch, .address {
+      text-align: center;
+      margin: 16px;
+    }
   }
 }
 
