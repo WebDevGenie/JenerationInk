@@ -92,12 +92,14 @@ header {
   display: block;
   justify-content: center;
   width: 400px;
+  border-bottom: 10px solid $primary-color;
+  border-left: 10px solid $primary-color;
+  height: fit-content;
+  border-radius: 15px 60px;
+  padding: 10px;
 
   font-size: 2rem;
-
-  padding: 10px;
   text-align: center;
-  border-radius: 20px 60px;
 }
 
 /* CTA button */
@@ -172,14 +174,8 @@ footer {
   }
 }
 
-.getinTouch {
-  text-align: left;
-}
-
 .address, .getinTouch{
   max-width: 30%;
-}
-.open-hours {
 }
 
 .no-margin {
@@ -207,10 +203,10 @@ footer {
   footer {
     display: block;
     text-align: center;
-    .getinTouch, .address {
-      text-align: center;
-      margin: 16px;
-    }
+    // .getinTouch, .address {
+    //   text-align: center;
+    //   margin: 16px;
+    // }
   }
 }
 
