@@ -122,20 +122,24 @@ header {
   touch-action: manipulation;
   width: fit-content;
 
-  transition: 0.4s;
+  transition: transform 0.4s;
   &:hover {
     background-color: rgba($color: $primary-color, $alpha: 0.75);
     transform: translateY(-5px);
-    transition: 0.4s;
   }
 }
 
 .opening-hours {
   display: block;
   text-align: center;
+  font-size: 2rem;
+  h2 {
+    font-family: Allura;
+    color: $primary-color;
+  }
   p {
+    font-size: 1rem;
     line-height: 40px;
-    font-size: 0.75rem;
     text-align: center;
   }
 }

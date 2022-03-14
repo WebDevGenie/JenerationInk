@@ -145,26 +145,32 @@ header li:hover a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .primary-btn:hover {
   background-color: rgba(32, 58, 98, 0.75);
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .opening-hours {
   display: block;
   text-align: center;
+  font-size: 2rem;
+}
+
+.opening-hours h2 {
+  font-family: Allura;
+  color: #203a62;
 }
 
 .opening-hours p {
+  font-size: 1rem;
   line-height: 40px;
-  font-size: 0.75rem;
   text-align: center;
 }
 
