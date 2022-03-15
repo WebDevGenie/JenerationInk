@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  margin: auto;
+  margin: 0;
   margin-left: 25%;
   margin-right: 25%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,14 +25,15 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   background-color: transparent;
+  margin: 0;
 }
 
 header nav {
@@ -55,6 +56,9 @@ header .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style-type: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -94,7 +98,7 @@ header li:hover a {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 20px;
-  height: 70vh;
+  height: 50vh;
   padding-top: 180px;
 }
 
@@ -161,6 +165,7 @@ header li:hover a {
   display: block;
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 200px;
 }
 
 .opening-hours h2 {

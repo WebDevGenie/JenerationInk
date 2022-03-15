@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  margin: auto;
+  margin: 0;
   margin-left: 25%;
   margin-right: 25%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,10 +26,11 @@ body {
 header {
   display: flex;
   position: absolute;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: transparent;
+  margin: 0;
 
   // navbar padding
   nav {
@@ -51,6 +52,7 @@ header {
   }
   .nav-links {
     display: flex;
+    justify-content: flex-end;
     list-style-type: none;
     align-items: center;
     margin: 0%;
@@ -79,7 +81,7 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   padding-bottom: 20px;
-  height: 70vh;
+  height: 50vh;
   padding-top: 180px;
 }
 
@@ -133,6 +135,7 @@ header {
   display: block;
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 200px;
   h2 {
     font-family: Allura;
     color: $primary-color;
