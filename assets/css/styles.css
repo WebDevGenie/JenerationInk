@@ -185,6 +185,7 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 10px;
+  margin-top: auto;
   font-size: 0.75rem;
 }
 

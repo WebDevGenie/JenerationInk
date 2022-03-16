@@ -150,6 +150,7 @@ footer {
   justify-content: space-evenly;
   align-items: flex-start;
   gap: 10px;
+  margin-top: auto;
 
   font-size: 0.75rem;
 
@@ -181,10 +182,6 @@ footer {
   footer {
     display: block;
     text-align: center;
-    // .getinTouch, .address {
-    //   text-align: center;
-    //   margin: 16px;
-    // }
   }
 }
 
