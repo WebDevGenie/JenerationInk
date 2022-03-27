@@ -64,10 +64,11 @@ header {
     text-align: center;
     margin-left: 30px;
     margin: right 20px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+
     &:hover {
       background-color: rgba($color: $primary-color, $alpha: 1);
-      border-radius: 10px;
-      transition: 0.4s ease;
     }
     &:hover a {
       color: #ffffff;
@@ -97,6 +98,15 @@ header {
 
   font-size: 2rem;
   text-align: center;
+
+  h1 {
+    font-family: Allura;
+    color: $primary-color;
+  }
+  p {
+    font-size: 1rem;
+    color: $primary-color;
+  }
 }
 
 /* CTA button */
@@ -135,6 +145,7 @@ header {
   display: block;
   text-align: center;
   font-size: 2rem;
+  margin-top: 100px;
   margin-bottom: 200px;
   h2 {
     font-family: Allura;
@@ -162,7 +173,8 @@ footer {
   }
 }
 
-.address, .getinTouch{
+.address,
+.getinTouch {
   max-width: 30%;
 }
 
@@ -192,7 +204,7 @@ footer {
 @media screen and (max-width: 768px) {
   header {
     text-align: center;
-    justify-content: space-between
+    justify-content: space-between;
   }
 
   .hamburger {

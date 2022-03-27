@@ -75,13 +75,13 @@ header li {
   text-align: center;
   margin-left: 30px;
   margin: right 20px;
+  border-radius: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 header li:hover {
   background-color: #203a62;
-  border-radius: 10px;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
 }
 
 header li:hover a {
@@ -116,6 +116,16 @@ header li:hover a {
   height: fit-content;
   font-size: 2rem;
   text-align: center;
+}
+
+.intro-text h1 {
+  font-family: Allura;
+  color: #203a62;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #203a62;
 }
 
 /* CTA button */
@@ -165,6 +175,7 @@ header li:hover a {
   display: block;
   text-align: center;
   font-size: 2rem;
+  margin-top: 100px;
   margin-bottom: 200px;
 }
 
@@ -198,7 +209,8 @@ footer h4 {
   color: #203a62;
 }
 
-.address, .getinTouch {
+.address,
+.getinTouch {
   max-width: 30%;
 }
 
