@@ -4,7 +4,7 @@
   src: url(/assets/fonts/Allura-Regular/Allura-Regular.ttf);
 }
 $primary-color: #203a62;
-$secondary-color: #203a62;
+$secondary-color: #1f3b62;
 $bg-color: #c0d4ff;
 
 $primary-font: "Koulen", cursive;
@@ -40,12 +40,18 @@ header {
     padding: 10px;
   }
 
+  li {
+    align-items: center;
+  }
+
   // links
   a {
     display: inline-block;
-    padding: 10px 10px;
+    padding: 10px;
     text-decoration: none;
     font-size: 1rem;
+    line-height: 100%;
+
     color: rgba($color: $primary-color, $alpha: 1);
 
     // onHover change text color to white
@@ -93,8 +99,7 @@ header {
   display: block;
   justify-content: center;
   max-width: 300px;
-  border-bottom: 10px solid $secondary-color;
-  border-radius: 15px;
+
   padding: 40px;
   font-size: 2rem;
   text-align: center;
@@ -115,6 +120,7 @@ header {
 /* CTA button */
 .primary-btn {
   display: block;
+  font-family: $primary-font;
   background-color: $primary-color;
   border-radius: 10px;
   border-style: none;
@@ -124,8 +130,10 @@ header {
   margin: 0 auto;
   outline: none;
   padding: 10px 16px;
-  text-decoration: none;
   width: fit-content;
+
+  // Remove underline
+  text-decoration: none;
 
   transition: 0.4s ease;
   &:hover {
@@ -134,63 +142,81 @@ header {
   }
 }
 
-.opening-hours {
+.procedures-section {
   display: block;
   text-align: center;
   font-size: 2rem;
-  margin-top: 100px;
+  margin-top: 10rem;
   margin-bottom: 200px;
   font-family: $primary-font;
-  h2 {
+  .procedures-section_header {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Allura;
-    color: #ffffff;
-    background-color: $secondary-color;
-    height: 100px;
+    color: $secondary-color;
   }
   li {
     font-size: 1rem;
     line-height: 40px;
-    text-align: end;
-    width: auto;
+    text-align: center;
     list-style-type: none;
   }
 
-  .opening-hours_body {
-    display: flex;
-    justify-content: space-evenly;
+  .procedures-section_body {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
     align-items: center;
+
+    .procedures-section_text {
+      display: flex;
+      justify-content: center;
+      h3 {
+        text-align: center;
+      }
+
+      li {
+        line-height: normal;
+        text-align: center;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
 }
 
-.opening-hours-text {
-  li {
-    .bold-font {
-      display: flex;
-    }
+.gridbox {
+  display: grid;
+  align-items: center;
+  h3 {
+    justify-self: center;
   }
+  .flexbox {
+    display: block;
+  }
+}
+
+.profileImg {
+  border-radius: 50px;
 }
 
 // Footer CSS
 footer {
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 10px;
-  margin-top: auto;
+  align-items: center;
+
+  line-height: 100%;
 
   font-size: 0.75rem;
   font-family: $primary-font;
   h4 {
     color: $primary-color;
   }
-}
-
-.address,
-.getinTouch {
-  max-width: 30%;
 }
 
 .no-margin {
@@ -204,53 +230,62 @@ footer {
   }
   .title-section {
     font-size: 1.75rem;
-    .primary-btn {
-      font-size: 0.75rem;
-    }
+  }
+  .primary-btn {
+    font-size: 1rem;
   }
 
   footer {
-    display: flex;
-    text-align: center;
-  }
-
-  .open-hours {
     display: block;
-  }
-  .opening-hours li {
     text-align: center;
+  }
+
+  .gridbox {
+    display: block;
+    li {
+      text-align: center;
+    }
+  }
+
+  .procedures-section {
+    .procedures-section_body {
+      display: block;
+    }
+    ul {
+      padding: 0;
+    }
   }
 }
 
-// Hamburger code
-@media screen and (max-width: 768px) {
-  header {
-    text-align: center;
-    justify-content: space-between;
-  }
+// // Hamburger code
+// @media screen and (max-width: 768px) {
+//   header {
+//     text-align: center;
+//     justify-content: space-between;
+//   }
 
-  .hamburger {
-    cursor: pointer;
-  }
+//   .hamburger {
+//     cursor: pointer;
+//   }
 
-  .line {
-    width: 30px;
-    height: 3px;
-    background-color: #203a62;
-    margin: 5px;
-  }
+//   .line {
+//     width: 30px;
+//     height: 3px;
+//     background-color: #203a62;
+//     margin: 5px;
+//   }
 
-  nav {
-    position: relative;
-  }
+//   nav {
+//     position: relative;
+//   }
 
-  .nav-links {
-    position: fixed;
-    height: 100vh;
-    width: 50%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(800px at 90% -10%);
-    transition: all 1s ease-out;
-  }
-}
+//   .nav-links {
+//     position: fixed;
+//     height: 100vh;
+//     width: 50%;
+//     flex-direction: column;
+//     clip-path: circle(100px at 90% -10%);
+//     -webkit-clip-path: circle(800px at 90% -10%);
+//     transition: all 1s ease-out;
+//   }
+// }
