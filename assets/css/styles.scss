@@ -21,7 +21,8 @@ html {
 }
 
 body {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -147,7 +148,6 @@ header {
   text-align: center;
   font-size: 2rem;
   margin-top: 10rem;
-  margin-bottom: 200px;
   font-family: $primary-font;
   .procedures-section_header {
     display: flex;
@@ -208,14 +208,20 @@ header {
 footer {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 
-  line-height: 100%;
+  line-height: 150%;
 
   font-size: 0.75rem;
   font-family: $primary-font;
+
+  background-color: $primary-color;
+  color: #ffffff;
+  padding: 10px;
   h4 {
-    color: $primary-color;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 1.75em;
   }
 }
 

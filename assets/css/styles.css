@@ -16,7 +16,8 @@ html {
 }
 
 body {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -165,7 +166,6 @@ header li:hover a {
   text-align: center;
   font-size: 2rem;
   margin-top: 10rem;
-  margin-bottom: 200px;
   font-family: "Koulen", cursive;
 }
 
@@ -253,16 +253,21 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 150%;
   font-size: 0.75rem;
   font-family: "Koulen", cursive;
+  background-color: #203a62;
+  color: #ffffff;
+  padding: 10px;
 }
 
 footer h4 {
-  color: #203a62;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 1.75em;
 }
 
 .no-margin {
