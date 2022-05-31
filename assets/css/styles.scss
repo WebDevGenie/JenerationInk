@@ -28,17 +28,29 @@ body {
 
 header {
   display: flex;
-  position: absolute;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: transparent;
+  height: 100px;
 
   font-family: $primary-font;
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    a {
+      padding: 0;
+      padding-left: 10px;
+    }
+  }
 
   // navbar padding
   nav {
     padding: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
   li {
@@ -92,26 +104,28 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   padding-bottom: 20px;
-  padding-top: 180px;
+  padding-top: 80px;
 }
 
 // Intro-section text
 .intro-text {
   display: block;
   justify-content: center;
-  max-width: 300px;
+  max-width: 400px;
+  margin-left: 100px;
+  padding-top: 50px;
 
-  padding: 40px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 
   h1 {
     font-family: Allura;
     font-weight: 600;
     color: $primary-color;
+    margin: 0;
   }
   p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #424549;
     text-align: center;
     font-family: $primary-font;
@@ -147,7 +161,7 @@ header {
   display: block;
   text-align: center;
   font-size: 2rem;
-  margin-top: 10rem;
+  margin-top: 15vh;
   font-family: $primary-font;
   .procedures-section_header {
     display: flex;
@@ -208,20 +222,29 @@ header {
 footer {
   display: flex;
   justify-content: space-evenly;
+  padding: 20px;
   align-items: flex-start;
+  margin-top: 100px;
 
   line-height: 150%;
 
   font-size: 0.75rem;
   font-family: $primary-font;
+  font-weight: 50;
 
   background-color: $primary-color;
   color: #ffffff;
-  padding: 10px;
   h4 {
     color: #ffffff;
     font-weight: 200;
     font-size: 1.75em;
+    font-family: Allura;
+    line-height: 200%;
+  }
+
+  p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
   }
 }
 
@@ -234,6 +257,16 @@ footer {
   .face-img {
     display: none;
   }
+
+  .intro-section {
+    margin-top: 100px;
+  }
+
+  .intro-text {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
   .title-section {
     font-size: 1.75rem;
   }
@@ -244,6 +277,9 @@ footer {
   footer {
     display: block;
     text-align: center;
+    .getInTouch {
+      margin-bottom: 20px;
+    }
   }
 
   .gridbox {
@@ -261,37 +297,26 @@ footer {
       padding: 0;
     }
   }
+
+  header {
+    text-align: center;
+    justify-content: space-between;
+  }
 }
 
-// // Hamburger code
-// @media screen and (max-width: 768px) {
-//   header {
-//     text-align: center;
-//     justify-content: space-between;
-//   }
-
-//   .hamburger {
-//     cursor: pointer;
-//   }
-
-//   .line {
-//     width: 30px;
-//     height: 3px;
-//     background-color: #203a62;
-//     margin: 5px;
-//   }
-
-//   nav {
-//     position: relative;
-//   }
-
-//   .nav-links {
-//     position: fixed;
-//     height: 100vh;
-//     width: 50%;
-//     flex-direction: column;
-//     clip-path: circle(100px at 90% -10%);
-//     -webkit-clip-path: circle(800px at 90% -10%);
-//     transition: all 1s ease-out;
-//   }
-// }
+@media screen and (max-width: 1000px) {
+  header {
+    display: block;
+    height: auto;
+    .logo {
+      position: static;
+      text-align: center;
+    }
+    .nav-links {
+      justify-content: center;
+    }
+  }
+  .intro-section {
+    padding-top: 0;
+  }
+}
