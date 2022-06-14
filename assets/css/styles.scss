@@ -98,8 +98,26 @@ header {
   }
 }
 
+// Social Icons
+.socials {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  a {
+    transition: 0.4s;
+    padding: 0;
+    padding-left: 5px;
+    img {
+      height: 30px;
+    }
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
 // Landing page
-.intro-section {
+#intro-section {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -157,7 +175,7 @@ header {
   }
 }
 
-.procedures-section {
+#procedures-section {
   display: block;
   text-align: center;
   font-size: 2rem;
@@ -253,9 +271,35 @@ footer {
 }
 
 // mobile responsitivity
+@media screen and (max-width: 1000px) {
+  header {
+    display: block;
+    height: auto;
+    .logo {
+      position: static;
+      text-align: center;
+    }
+    .nav-links {
+      justify-content: center;
+    }
+  }
+  .intro-section {
+    padding-top: 0;
+  }
+  .socials {
+    margin-top: -100px;
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .face-img {
     display: none;
+  }
+
+  .socials {
+    margin-top: -120px;
+    margin-right: 10px;
   }
 
   .intro-section {
@@ -301,22 +345,5 @@ footer {
   header {
     text-align: center;
     justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  header {
-    display: block;
-    height: auto;
-    .logo {
-      position: static;
-      text-align: center;
-    }
-    .nav-links {
-      justify-content: center;
-    }
-  }
-  .intro-section {
-    padding-top: 0;
   }
 }

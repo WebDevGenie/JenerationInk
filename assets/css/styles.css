@@ -113,7 +113,29 @@ header li:hover a {
   color: #ffffff;
 }
 
-.intro-section {
+.socials {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+}
+
+.socials a {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: 0;
+  padding-left: 5px;
+}
+
+.socials a img {
+  height: 30px;
+}
+
+.socials a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +202,7 @@ header li:hover a {
           transform: translateY(-5px);
 }
 
-.procedures-section {
+#procedures-section {
   display: block;
   text-align: center;
   font-size: 2rem;
@@ -188,7 +210,7 @@ header li:hover a {
   font-family: "Koulen", cursive;
 }
 
-.procedures-section .procedures-section_header {
+#procedures-section .procedures-section_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,14 +224,14 @@ header li:hover a {
   color: #1f3b62;
 }
 
-.procedures-section li {
+#procedures-section li {
   font-size: 1rem;
   line-height: 40px;
   text-align: center;
   list-style-type: none;
 }
 
-.procedures-section .procedures-section_body {
+#procedures-section .procedures-section_body {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -221,7 +243,7 @@ header li:hover a {
           align-items: center;
 }
 
-.procedures-section .procedures-section_body .procedures-section_text {
+#procedures-section .procedures-section_body .procedures-section_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,16 +252,16 @@ header li:hover a {
           justify-content: center;
 }
 
-.procedures-section .procedures-section_body .procedures-section_text h3 {
+#procedures-section .procedures-section_body .procedures-section_text h3 {
   text-align: center;
 }
 
-.procedures-section .procedures-section_body .procedures-section_text li {
+#procedures-section .procedures-section_body .procedures-section_text li {
   line-height: normal;
   text-align: center;
 }
 
-.procedures-section .procedures-section_body .procedures-section_text ul {
+#procedures-section .procedures-section_body .procedures-section_text ul {
   margin: 0;
   padding: 0;
 }
@@ -301,9 +323,36 @@ footer p {
   margin: 0;
 }
 
+@media screen and (max-width: 1000px) {
+  header {
+    display: block;
+    height: auto;
+  }
+  header .logo {
+    position: static;
+    text-align: center;
+  }
+  header .nav-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro-section {
+    padding-top: 0;
+  }
+  .socials {
+    margin-top: -100px;
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .face-img {
     display: none;
+  }
+  .socials {
+    margin-top: -120px;
+    margin-right: 10px;
   }
   .intro-section {
     margin-top: 100px;
@@ -342,25 +391,6 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  header {
-    display: block;
-    height: auto;
-  }
-  header .logo {
-    position: static;
-    text-align: center;
-  }
-  header .nav-links {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .intro-section {
-    padding-top: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
